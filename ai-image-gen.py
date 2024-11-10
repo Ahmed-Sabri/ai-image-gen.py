@@ -21,7 +21,7 @@ height = 768
 
 # Generate images for each model (2 images per model with random seeds)
 for model in models:
-    for i in range(1, 3):  # Generate 2 images per model
+    for i in range(1, 6):  # Generate 5 images per model
         seed = random.randint(1, 100000)  # Use a random seed for each image
         image_url = f"https://pollinations.ai/p/{promptz}?width={width}&height={height}&seed={seed}&model={model}"
         download_image(image_url, model, i)  # Download the image with a unique filename
